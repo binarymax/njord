@@ -20,7 +20,7 @@ session.login('login/','username','password',function(err){
 	if(err) {
 		console.error('Could not login:', err);
 	} else {
-		session.get('myaccount/',{},function(err,accountdata){
+		session.get('myaccount/',function(err,accountdata){
 			if(err) {
 				console.error('Could not get account:', err);
 			} else {
